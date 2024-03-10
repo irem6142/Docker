@@ -125,19 +125,19 @@ CMD ["java","uygulama"]
 
 ```
 
-### Bu Dockerfile.multi dosyasından dockerhubkullaniciadiniz/alistirma:java tagli bir imaj yaratın. 
+### 12. Bu Dockerfile.multi dosyasından dockerhubkullaniciadiniz/alistirma:java tagli bir imaj yaratın. 
 ```
 docker image build -t  irem4261/alistirma:java -f Dockerfile.multi .
 ```
 
-### Bu imajdan bir container yaratın ve java uygulamanızın çıkardığı mesajı görün.
+### 13. Bu imajdan bir container yaratın ve java uygulamanızın çıkardığı mesajı görün.
 ```
 docker container run  irem4261/alistirma:java
 
 ~ docker run  irem4261/alistirma:java
 ```
 
-###  dockerhubkullaniciadiniz/alistirma:kirmizi, dockerhubkullaniciadiniz/alistirma:sari, dockerhubkullaniciadiniz/alistirma:java
+###  14.Dockerhubkullaniciadiniz/alistirma:kirmizi, dockerhubkullaniciadiniz/alistirma:sari, dockerhubkullaniciadiniz/alistirma:java
 imajlarını Docker hub'a yollayın. 
 
 ```
@@ -148,12 +148,12 @@ docker  push irem4261/alistirma:sari
 docker  push irem4261/alistirma:java
 ```
 
-### Docker hub'daki registry isimli imajdan lokal bir Docker Registry çalıştırın. 
+### 15.  Docker hub'daki registry isimli imajdan lokal bir Docker Registry çalıştırın. 
 ```
 docker run -d -p 5000:5000 --restart always --name registry registry
 ```
 
-### dockerhubkullaniciadiniz/alistirma:kirmizi, dockerhubkullaniciadiniz/alistirma:sari, dockerhubkullaniciadiniz/alistirma:java
+###  16.Dockerhubkullaniciadiniz/alistirma:kirmizi, dockerhubkullaniciadiniz/alistirma:sari, dockerhubkullaniciadiniz/alistirma:java
 imajlarını yeniden tagleyerek bu lokal registry'e gönderin ve ardından bu registry'nin web arayüzünden kontrol edin. 
 ```
 docker iamge tag irem4261/alistirma:kirmizi 127.0.0.1:5000/kirmizi:latest
