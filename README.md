@@ -5,4 +5,4 @@
 ### Docker nedir?
 ##### Docker, konteyner(container) adı verilen sanal ortamlarda uygulama geliştirmek, uygulamaları dağıtmak ve yönetmek için kullanılan açık kaynaklı bir platformdur. Docker ile Linux, MacOs ve Windows üzerinde Linux ve Windows sanal makinelerini çalıştırabiliriz.
 
-### Bu repo [AdanZyedocker](https://hmb.udemy.com/course/adan-zye-docker) udemy kursundan hazırlanmıştır.
+### Bu repo [A'danZ'ye docker eğitimindeki alıştırma sorularından ](https://hmb.udemy.com/course/adan-zye-docker)  hazırlanmıştır.
